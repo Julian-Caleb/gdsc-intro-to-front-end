@@ -1,4 +1,96 @@
-h1 {
+/* Header Title */
+.title {
+  position: absolute;
+  top: 45px;
+  z-index: -1;
+
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    180deg,
+    rgba(193, 0, 0, 1) 50%,
+    rgba(228, 228, 228, 1) 50%
+  );
+}
+
+#title {
+  font-family: "Brush Script MT";
+  font-size: 50px;
   color: black;
+}
+
+/* Main Content */
+.main-content {
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+/* Beranda */
+.beranda-section {
+  padding: 40px;
+  background-image: url("/images/batik.jpg");
+
   text-align: center;
+  font-family: "Bahnschrift";
+  color: azure;
+}
+
+/* Makanan Utama dan Pencuci Mulut*/
+.makanan-makanan-judul {
+  width: 100%;
+  text-align: center;
+
+  font-family: "Bahnschrift SemiBold";
+  font-size: 40px;
+  color: azure;
+}
+
+.makanan-makanan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.makanan-makanan-item {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: orange;
+}
+
+.makanan-makanan-item img {
+  width: 80%;
+  height: auto;
+}
+
+.makanan-makanan-item p {
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.makanan-makanan-item:hover {
+  background-color: orangered;
+}
+
+.makanan-makanan-item:hover img {
+  filter: brightness(40%);
+}
+
+.makanan-makanan-item:hover p a {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .makanan-makanan-item {
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
 }

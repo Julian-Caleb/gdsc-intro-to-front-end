@@ -4,35 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="headerfooter.css" />
+    <link rel="stylesheet" href="makanan.css" />
     <title>Gudeg</title>
   </head>
   <body>
     <!-- Header -->
     <header>
       <!-- Navigation Bar -->
-      <nav>
+      <nav id="menu">
+        <input type="checkbox" id="responsive-menu" /><label></label>
         <ul>
-          <li>
-            <a href="">Beranda</a>
-          </li>
-          <li>
-            <a href="">Makanan Utama</a>
-          </li>
-          <li>
-            <a href="">Pencuci Mulut</a>
-          </li>
+          <li><a href="index.html#beranda-section">Beranda</a></li>
+          <li><a href="index.html#makanan-utama-section">Makanan Utama</a></li>
+          <li><a href="index.html#pencuci-mulut-section">Pencuci Mulut</a></li>
         </ul>
       </nav>
     </header>
     <br />
     <!-- Main Content -->
-    <div>
-      <h2>Gudeg</h2>
-      <h5>Makanan khas Provinsi Yogyakarta dan Jawa Tengah</h5>
-      <img src="/images/gudeg.jpg" />
+    <div class="content">
+      <h2 class="content-bold" id="content-title">Gudeg</h2>
+      <h5 class="content-bold" id="content-caption">
+        Makanan khas Provinsi Yogyakarta dan Jawa Tengah
+      </h5>
+      <img class="content-img" src="/images/gudeg.jpg" />
       <br />
-      <h5>Bahan-Bahan:</h5>
-      <ul>
+      <h5 class="content-bold content-sub-title">Bahan-Bahan:</h5>
+      <ul class="content-list">
         <li>
           1 kg nangka muda, potong kotak lalu rebus sebentar dengan sedikit
           garam, angkat, tiriskan
@@ -50,16 +49,16 @@
         <li>Telur rebus</li>
       </ul>
       <br />
-      <h5>Bahan Halus:</h5>
-      <ul>
+      <h5 class="content-bold content-sub-title">Bahan Halus:</h5>
+      <ul class="content-list">
         <li>100 gram bawang merah</li>
         <li>10 siung bawang putih</li>
         <li>8 butir kemiri sangrai</li>
         <li>20 gram ketumbar bubuk</li>
       </ul>
       <br />
-      <h5>Cara Membuat:</h5>
-      <ol>
+      <h5 class="content-bold content-sub-title">Cara Membuat:</h5>
+      <ol class="content-list">
         <li>
           Tata daun jati di dasar panci, lalu masukkan nangka muda dan semua
           bumbu. Tuang santan cair dan juga air kelapa. Kemudian tutup kembali
@@ -77,7 +76,7 @@
         </li>
         <li>Sajikan.</li>
       </ol>
-      <p>
+      <p class="content-sumber">
         Sumber:
         https://www.merdeka.com/sumut/11-resep-masakan-indonesia-tradisional-yang-otentik-lezat-dan-mudah-dibuat-kln.html
       </p>
@@ -85,9 +84,13 @@
     <br />
     <!-- Footer -->
     <footer>
-      <!-- About Me -->
-      <p>Julian Caleb Simandjuntak</p>
-      <p>Sekolah Teknik Elektro dan Informatika - Komputasi</p>
+      <div class="container">
+        <!-- About Me -->
+        <p>
+          Julian Caleb Simandjuntak <br />
+          Sekolah Teknik Elektro dan Informatika - Komputasi
+        </p>
+      </div>
     </footer>
   </body>
 </html>

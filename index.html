@@ -5,31 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="headerfooter.css" />
+    <title>Main Menu</title>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <!-- Title -->
-      <div>Selamat Datang</div>
       <!-- Navigation Bar -->
-      <nav>
+      <nav id="menu">
+        <input type="checkbox" id="responsive-menu" /><label></label>
         <ul>
-          <li>
-            <a href="#beranda-section">Beranda</a>
-          </li>
-          <li>
-            <a href="#makanan-utama-section">Makanan Utama</a>
-          </li>
-          <li>
-            <a href="#pencuci-mulut-section">Pencuci Mulut</a>
-          </li>
+          <li><a href="index.html#beranda-section">Beranda</a></li>
+          <li><a href="index.html#makanan-utama-section">Makanan Utama</a></li>
+          <li><a href="index.html#pencuci-mulut-section">Pencuci Mulut</a></li>
         </ul>
       </nav>
     </header>
-    <br />
+    <!-- Title -->
+    <div class="title">
+      <h1 id="title">Selamat Datang!</h1>
+    </div>
+    <br id="beranda-section" />
     <!-- Main Content -->
-    <div>
+    <div class="main-content">
       <!-- Description -->
       <div class="beranda-section">
         Selamat datang di website Uenakk Tenan! Disini terdapat kumpulan resep
@@ -37,43 +35,66 @@
         yang tentunya enak dan mudah untuk dibuat. Selamat memasak!
       </div>
       <!-- Makanan Utama -->
-      <br />
-      <div class="makanan-utama-section">
-        <button>
-          <a href="nasi_liwet.html">Nasi Liwet</a>
+      <br id="makanan-utama-section" />
+      <h2 class="makanan-makanan-judul">Makanan Utama</h2>
+      <div class="makanan-makanan">
+        <button class="makanan-makanan-item">
+          <img src="images/nasi_liwet.jpg" alt="Nasi Liwet" />
+          <p><a href="nasi_liwet.html">Nasi Liwet</a></p>
         </button>
-        <button>
-          <a href="coto_makassar.html">Coto Makassar</a>
+        <button class="makanan-makanan-item">
+          <img src="images/coto_makassar.jpg" alt="Coto Makassar" />
+          <p><a href="coto_makassar.html">Coto Makassar</a></p>
         </button>
-        <button>
-          <a href="gudeg.html">Gudeg</a>
+        <button class="makanan-makanan-item">
+          <img src="images/gudeg.jpg" alt="Gudeg" />
+          <p><a href="gudeg.html">Gudeg</a></p>
         </button>
-        <button>
-          <a href="rujak_cingur.html">Rujak Cingur</a>
+        <button class="makanan-makanan-item">
+          <img src="images/rujak_cingur.jpg" alt="Rujak Cingur" />
+          <p><a href="rujak_cingur.html">Rujak Cingur</a></p>
         </button>
       </div>
       <!-- Pencuci Mulut -->
-      <div id="pencuci-mulut-section">
-        <button>
-          <a href="es_pisang_ijo.html">Es Pisang Ijo</a>
+      <br id="pencuci-mulut-section" />
+      <h2 class="makanan-makanan-judul">Pencuci Mulut</h2>
+      <div class="makanan-makanan">
+        <button class="makanan-makanan-item">
+          <img src="images/es_pisang_ijo.jpeg" alt="Es Pisang Ijo" />
+          <p>
+            <a href="es_pisang_ijo.html">Es Pisang Ijo</a>
+          </p>
         </button>
-        <button>
-          <a href="es_dawet_ayu.html">Es Dawet Ayu</a>
+        <button class="makanan-makanan-item">
+          <img src="images/es_dawet_ayu.jpg" alt="Es Dawet Ayu" />
+          <p>
+            <a href="es_dawet_ayu.html">Es Dawet Ayu</a>
+          </p>
         </button>
-        <button>
-          <a href="klepon.html">Klepon</a>
+        <button class="makanan-makanan-item">
+          <img src="images/klepon.jpg" alt="Klepon" />
+          <p>
+            <a href="klepon.html">Klepon</a>
+          </p>
         </button>
-        <button>
-          <a href="bika_ambon.html">Bika Ambon</a>
+        <button class="makanan-makanan-item">
+          <img src="images/rujak_cingur.jpg" alt="Rujak Cingur" />
+          <p>
+            <a href="bika_ambon.html">Bika Ambon</a>
+          </p>
         </button>
       </div>
     </div>
     <br />
     <!-- Footer -->
     <footer>
-      <!-- About Me -->
-      <p>Julian Caleb Simandjuntak</p>
-      <p>Sekolah Teknik Elektro dan Informatika - Komputasi</p>
+      <div class="container">
+        <!-- About Me -->
+        <p>
+          Julian Caleb Simandjuntak <br />
+          Sekolah Teknik Elektro dan Informatika - Komputasi
+        </p>
+      </div>
     </footer>
   </body>
 </html>

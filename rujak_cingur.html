@@ -4,23 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="headerfooter.css" />
+    <link rel="stylesheet" href="makanan.css" />
     <title>Rujak Cingur</title>
   </head>
   <body>
     <!-- Header -->
     <header>
       <!-- Navigation Bar -->
-      <nav>
+      <nav id="menu">
+        <input type="checkbox" id="responsive-menu" /><label></label>
         <ul>
-          <li>
-            <a href="">Beranda</a>
-          </li>
-          <li>
-            <a href="">Makanan Utama</a>
-          </li>
-          <li>
-            <a href="">Pencuci Mulut</a>
-          </li>
+          <li><a href="index.html#beranda-section">Beranda</a></li>
+          <li><a href="index.html#makanan-utama-section">Makanan Utama</a></li>
+          <li><a href="index.html#pencuci-mulut-section">Pencuci Mulut</a></li>
         </ul>
       </nav>
     </header>
@@ -85,9 +82,13 @@
     <br />
     <!-- Footer -->
     <footer>
-      <!-- About Me -->
-      <p>Julian Caleb Simandjuntak</p>
-      <p>Sekolah Teknik Elektro dan Informatika - Komputasi</p>
+      <div class="container">
+        <!-- About Me -->
+        <p>
+          Julian Caleb Simandjuntak <br />
+          Sekolah Teknik Elektro dan Informatika - Komputasi
+        </p>
+      </div>
     </footer>
   </body>
 </html>
