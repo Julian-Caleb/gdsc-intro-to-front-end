@@ -40,10 +40,47 @@
 
 .content-list {
   width: 90%;
+  font-size: 18px;
 }
 
 .content-sumber {
   margin: 40px;
   font-size: 15px;
   font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  #content-title {
+    font-size: 80px;
+  }
+
+  #content-caption {
+    font-size: 30px;
+  }
+
+  .content-img {
+    width: 100%;
+    align-self: center;
+    width: 800px;
+    height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-sub-title {
+    margin: 20px;
+    font-size: 28px;
+  }
+
+  .content-list {
+    width: 90%;
+    font-size: 24px;
+  }
+
+  .content-sumber {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+  }
 }
