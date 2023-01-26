@@ -1,8 +1,10 @@
 <h1> ----- IDENTITAS PEMBUAT ----- </h1>
-Nama        : Julian Caleb Simandjuntak
-Fakultas    : STEI - K
-NIM         : 19622121
-GDSC ID     : 220020035
+<ul>
+    <li>Nama        : Julian Caleb Simandjuntak</li>
+    <li>Fakultas    : STEI - K</li>
+    <li>NIM         : 19622121</li>
+    <li>GDSC ID     : 220020035</li>
+</ul>
 
 <h1> ----- DESKRIPSI PROGRAM ----- </h1>
 <ul>
