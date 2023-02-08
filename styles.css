@@ -5,7 +5,7 @@
   z-index: -1;
 
   width: 100%;
-  height: 100px;
+  height: 93px;
 
   display: flex;
   align-items: center;
@@ -137,12 +137,20 @@
 
 /* Beranda */
 .beranda-section {
-  padding: 40px;
-  background-image: url("/images/batik.jpg");
-
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  top: 35%;
   text-align: center;
   font-family: "Bahnschrift";
+  font-size: 10px;
   color: azure;
+}
+
+@media screen and (min-width: 768px) {
+  .beranda-section {
+    font-size: 25px;
+  }
 }
 
 /* Makanan Utama dan Pencuci Mulut*/

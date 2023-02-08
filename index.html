@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="headerfooter.css" />
+    <link rel="stylesheet" href="slider.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
@@ -32,13 +33,39 @@
     <br id="beranda-section" />
     <!-- Main Content -->
     <div class="main-content">
-      <!-- Description -->
-      <div class="beranda-section">
-        Selamat datang di website Uenakk Tenan! Disini terdapat kumpulan resep
-        makanan dari seluruh dunia termasuk makanan-makanan khas Indonesia mulai
-        dari hidangan utama sampai pencuci mulut yang tentunya enak dan mudah
-        untuk dibuat. Selamat memasak!
-      </div>
+      <!-- Carousel -->
+      <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">
+            &#8656;
+          </button>
+          <button class="carousel-button next" data-carousel-button="next">
+            &#8658;
+          </button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <p class="beranda-section">
+                Welcome to the Uenakk Tenan website!
+              </p>
+              <img src="\images\bika_ambon.jpg" alt="Makanan #1" />
+            </li>
+            <li class="slide">
+              <p class="beranda-section">
+                Here is a collection of recipes food from all over the world
+                <br />
+                including Indonesian specialties from from main dishes to
+                <br />
+                desserts which are certainly delicious and easy to be made.
+              </p>
+              <img src="\images\coto_makassar.jpg" alt="Makanan #3" />
+            </li>
+            <li class="slide">
+              <p class="beranda-section">Happy cooking!</p>
+              <img src="\images\klepon.jpg" alt="Makanan #2" />
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- Search Bar -->
       <br />
       <h2 class="makanan-makanan-judul">Search Here:</h2>
@@ -127,4 +154,5 @@
     </footer>
   </body>
   <script src="index.js"></script>
+  <script src="slider.js"></script>
 </html>
