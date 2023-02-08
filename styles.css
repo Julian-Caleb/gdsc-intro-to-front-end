@@ -31,6 +31,110 @@
   margin-bottom: 20px;
 }
 
+/* Search Bar */
+#search-box {
+  position: relative;
+  left: 37%;
+  height: 60px;
+  width: 0px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media screen and (min-width: 768px) {
+  #search-box {
+    left: 45%;
+  }
+}
+
+#search-box.active {
+  transform: translateX(-45%);
+  width: 300px;
+}
+
+#search-box.active input {
+  opacity: 1;
+}
+
+#search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: #fff;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 0 60px 0 20px;
+  outline: none;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#search-box #search-btn {
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  color: orange;
+  position: absolute;
+  top: 50%;
+  right: -75px;
+  transform: translateY(-50%);
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 2;
+}
+
+#search-box.active #search-btn {
+  height: 50px;
+  width: 50px;
+  background: orange;
+  color: #fff;
+}
+
+#search-box #cancel-btn {
+  position: absolute;
+  top: 50%;
+  right: -75px;
+  transform: translateY(-50%);
+  color: orange;
+  font-size: 25px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+#search-box.active #cancel-btn {
+  right: -135px;
+  opacity: 1;
+  color: #fff;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#msg {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Bahnschrift";
+  text-align: center;
+}
+
+#details {
+  display: flex;
+  justify-content: center;
+}
+
+#items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Beranda */
 .beranda-section {
   padding: 40px;

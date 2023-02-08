@@ -39,6 +39,7 @@
 }
 
 .content-list {
+  text-align: justify;
   width: 90%;
   font-size: 18px;
 }

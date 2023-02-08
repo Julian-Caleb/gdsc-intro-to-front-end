@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="headerfooter.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
     <title>Main Menu</title>
   </head>
   <body>
@@ -15,15 +19,15 @@
       <nav id="menu">
         <input type="checkbox" id="responsive-menu" /><label></label>
         <ul>
-          <li><a href="index.html#beranda-section">Beranda</a></li>
-          <li><a href="index.html#makanan-utama-section">Makanan Utama</a></li>
-          <li><a href="index.html#pencuci-mulut-section">Pencuci Mulut</a></li>
+          <li><a href="index.html#beranda-section">Home</a></li>
+          <li><a href="index.html#makanan-utama-section">Main Dish</a></li>
+          <li><a href="index.html#pencuci-mulut-section">Dessert</a></li>
         </ul>
       </nav>
     </header>
     <!-- Title -->
     <div class="title">
-      <h1 id="title">Selamat Datang!</h1>
+      <h1 id="title">Welcome!!</h1>
     </div>
     <br id="beranda-section" />
     <!-- Main Content -->
@@ -31,12 +35,37 @@
       <!-- Description -->
       <div class="beranda-section">
         Selamat datang di website Uenakk Tenan! Disini terdapat kumpulan resep
-        makanan khas Indonesia mulai dari hidangan utama sampai pencuci mulut
-        yang tentunya enak dan mudah untuk dibuat. Selamat memasak!
+        makanan dari seluruh dunia termasuk makanan-makanan khas Indonesia mulai
+        dari hidangan utama sampai pencuci mulut yang tentunya enak dan mudah
+        untuk dibuat. Selamat memasak!
+      </div>
+      <!-- Search Bar -->
+      <br />
+      <h2 class="makanan-makanan-judul">Search Here:</h2>
+      <div class="search-section">
+        <div id="search-box">
+          <input
+            id="input-field"
+            type="text"
+            placeholder="Input the name of the food..."
+          />
+          <div id="search-btn">
+            <i class="fas fa-search"></i>
+          </div>
+          <div id="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <br />
+        <div id="msg">
+          <h4>Food not found. Please search for other food.</h4>
+        </div>
+        <div id="details"></div>
+        <div id="items"></div>
       </div>
       <!-- Makanan Utama -->
       <br id="makanan-utama-section" />
-      <h2 class="makanan-makanan-judul">Makanan Utama</h2>
+      <h2 class="makanan-makanan-judul">Main Dish</h2>
       <div class="makanan-makanan">
         <button class="makanan-makanan-item">
           <img src="images/nasi_liwet.jpg" alt="Nasi Liwet" />
@@ -57,7 +86,7 @@
       </div>
       <!-- Pencuci Mulut -->
       <br id="pencuci-mulut-section" />
-      <h2 class="makanan-makanan-judul">Pencuci Mulut</h2>
+      <h2 class="makanan-makanan-judul">Dessert</h2>
       <div class="makanan-makanan">
         <button class="makanan-makanan-item">
           <img src="images/es_pisang_ijo.jpeg" alt="Es Pisang Ijo" />
@@ -97,4 +126,5 @@
       </div>
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>
